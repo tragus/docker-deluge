@@ -13,6 +13,7 @@ ENV PYTHON_EGG_CACHE="/config/plugins/.python-eggs"
 # install software
 RUN \
  echo "**** add repositories ****" && \
+ set -x && \
  apt-get update && \
  apt-get install -y \
 	gnupg && \
